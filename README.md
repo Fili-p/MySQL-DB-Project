@@ -1,7 +1,7 @@
 # MySQL DB Project
 
 ## 📌 Overview
-This project was completed as part of my university Database course (DAD-202) and focuses on creating and managing a **MySQL** database.  
+This project was completed in Codio as part of my university Database course (DAD-202) and focuses on creating and managing a **MySQL** database.  
 It demonstrates database design, data loading, and SQL queries for data analysis and management.
 
 ---
@@ -23,6 +23,11 @@ It demonstrates database design, data loading, and SQL queries for data analysis
 - Export query results to a `.csv` file  
 ---
 ### Part 1 – Database Creation
+
+1.	In Codio navigate to your online integrated development environment (IDE).
+
+<img width="844" height="713" alt="image" src="https://github.com/user-attachments/assets/2ba1ea0e-12c1-47d0-8de7-e59ba39dcce0" />
+
 
 ---
 ### Part 2 – Data Import
