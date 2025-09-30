@@ -21,15 +21,14 @@ It demonstrates database design, data loading, and SQL queries for data analysis
 - Update and delete records in **RMA** and **Orders**  
 - Rename all instances of *Customer* to *Collaborator*  
 - Export query results to a `.csv` file  
-----------------------------------------------------------------------------------------------------
+---
+### Part 1 – Database Creation
 
+---
+### Part 2 – Data Import
 
-
-
-
-
-
-
+---
+### Part 3 – Data Queries & Updates
 
 ---
 
