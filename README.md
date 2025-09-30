@@ -132,8 +132,43 @@ There were a total of 505 orders placed by customers in Framingham, Massachusett
 In Massachusetts, there are 982 customers.
 
 <br></br>
-3. 
+3. Write a SQL query to insert four new records into the Orders and Customers tables using the following data:
 
+### Orders Table
+
+| OrderID   | CustomerID | SKU        | Description                                               |
+|-----------|------------|------------|-----------------------------------------------------------|
+| 1204305   | 100004     | ADV-24-10C | Advanced Switch 10GigE Copper 24 port                     |
+| 1204306   | 100005     | ADV-48-10F | Advanced Switch 10 GigE Copper/Fiber 44 port copper 4 port fiber |
+| 1204307   | 100006     | ENT-24-10F | Enterprise Switch 10GigE SFP+ 24 Port                     |
+| 1204308   | 100007     | ENT-48-10F | Enterprise Switch 10GigE SFP+ 48 port                     |
+
+* INSERT INTO Orders VALUES (1204305, 100004, 'ADV-24-10C', 'Advanced Switch 10GigE Copper 24 port'),
+  * (1204306, 100005, 'ADV-48-10F', 'Advanced Switch 10 GigE Copper/Fiber 44 port copper 4 port fiber'),
+  * (1204307, 100006, 'ENT-24-10F', 'Enterprise Switch 10GigE SFP+ 24 Port'),
+  * (1204308, 100007, 'ENT-48-10F', 'Enterprise Switch 10GigE SFP+ 48 port');
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/d821720e-8dc7-43ba-90e6-4a607e73fe4e" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+
+### Customers Table
+
+| CustomerID | FirstName | LastName   | StreetAddress           | City       | State | ZipCode | Telephone     |
+|------------|-----------|------------|------------------------|------------|-------|---------|---------------|
+| 100004     | Luke      | Skywalker  | 15 Maiden Lane         | New York   | NY    | 10222   | 212-555-1234  |
+| 100005     | Winston   | Smith      | 123 Sycamore Street    | Greensboro | NC    | 27401   | 919-555-6623  |
+| 100006     | MaryAnne  | Jenkins    | 1 Coconut Way          | Jupiter    | FL    | 33458   | 321-555-8907  |
+| 100007     | Janet     | Williams   | 55 Redondo Beach Blvd  | Torrence   | CA    | 90501   | 310-555-5678  |
+
+* INSERT INTO Customers VALUES(100004, 'Luke', 'Skywalker', '15 Maiden Lane', 'New York', 'NY', '10222', '212-555-1234'),
+  * (100005, 'Winston', 'Smith', '123 Sycamore Street', 'Greensboro', 'NC', '27401', '919-555-6623'),
+  * (100006, 'MaryAnne', 'Jenkins', '1 Coconut Way', 'Jupiter', 'FL', '33458', '321-555-8907'),
+  * (100007, 'Janet', 'Williams', '55 Redondo Beach Blvd', 'Torrence', 'CA', '90501', '310-555-5678');
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/fa7e0004-0f40-456d-a646-b64d9e32b6cf" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+  
 ---
 
 ## 🎯 Learning Outcomes
