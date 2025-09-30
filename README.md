@@ -43,7 +43,7 @@ It demonstrates database design, data loading, and SQL queries for data analysis
   </div>
 
 <br></br>
-3. Create a table named Customers in the QuantigrationUpdates database.
+3. Create a table named **Customers** in the QuantigrationUpdates database.
 * CREATE TABLE Customers (
   * CustomerID INT,
   * FirstName VARCHAR(25),
@@ -59,6 +59,39 @@ It demonstrates database design, data loading, and SQL queries for data analysis
 <div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
     <img src="https://github.com/user-attachments/assets/8db03915-4ee7-4df0-9e0b-004b8bc9ae2f" style="max-width: 200px; width: 60%; height: auto;" />
   </div>
+
+<br></br>
+4. Create a table named **Orders** in the QuantigrationUpdates database.
+* CREATE TABLE Orders (
+  * OrderID INT,
+  * CustomerID INT,
+  * SKU VARCHAR(20),
+  * Description VARCHAR(50),
+  * PRIMARY KEY (OrderID),
+  * FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+  * );
+* DESCRIBE Orders;
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/04149002-68c5-47d7-a1e3-40baabc2e5bb" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+<br></br>
+5. Create a table named **RMA** in the QuantigrationUpdates database.
+* CREATE TABLE RMA (
+  * RMAID INT,
+  * OrderID INT,
+  * Step VARCHAR(50),
+  * Status VARCHAR(15),
+  * Reason VARCHAR(15),
+  * PRIMARY KEY (RMAID),
+  * FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+  * );
+* DESCRIBE RMA;
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/ab9747cf-029d-4a11-a5cf-f1e061f95ffb" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+
 
 ---
 ### Part 2 – Data Import
