@@ -90,11 +90,19 @@ It demonstrates database design, data loading, and SQL queries for data analysis
 <div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
     <img src="https://github.com/user-attachments/assets/ab9747cf-029d-4a11-a5cf-f1e061f95ffb" style="max-width: 200px; width: 60%; height: auto;" />
   </div>
-
-
-
+  
 ---
-### Part 2 – Data Import
+### Part 2 – Importing Data
+
+1. Import data from the CSV files into the Customers, Orders, and RMA tables in the QuantigrationUpdates database.
+* LOAD DATA INFILE (/PATH)
+  * INTO TABLE (Customers/Orders/RMA)
+  * FIELDS TERMINATED BY ','
+  * LINES TERMINATED BY '\n'
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/7e156c25-b79a-42e1-9ee3-9b939713f8e1" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
 
 ---
 ### Part 3 – Data Queries & Updates
