@@ -103,9 +103,21 @@ It demonstrates database design, data loading, and SQL queries for data analysis
     <img src="https://github.com/user-attachments/assets/7e156c25-b79a-42e1-9ee3-9b939713f8e1" style="max-width: 200px; width: 60%; height: auto;" />
   </div>
 
-
 ---
 ### Part 3 – Data Queries & Updates
+
+1. Write an SQL query that returns the count of orders for customers located only in the city of Framingham, Massachusetts.
+* SELECT COUNT(*)
+  * FROM Customers
+  * INNER JOIN Orders ON Orders.CustomerID = Customers.CustomerID
+  * WHERE City = 'Framingham' AND State = 'Massachusetts';
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/469a33d0-4976-455d-b9e7-87907613bc4e" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+- There were a total of 505 orders placed by customers in Framingham, Massachusetts. This query determines the total number of orders by performing an inner join between the customer table and the orders table.
+
+
 
 ---
 
