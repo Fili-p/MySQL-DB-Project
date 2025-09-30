@@ -1,7 +1,7 @@
 # MySQL DB Project
 
 ## 📌 Overview
-This project was completed as part of DAD-202 course and focuses on creating and managing a **MySQL** database.  
+This project was completed as part of my university Database course (DAD-202) and focuses on creating and managing a **MySQL** database.  
 It demonstrates database design, data loading, and SQL queries for data analysis and management.
 
 ---
