@@ -1,12 +1,12 @@
 # MySQL DB Project
 
-## 📌 Overview
+## Overview
 This project was completed in Codio as part of my university Database course (DAD-202) and focuses on creating and managing a **MySQL** database.  
 It demonstrates database design, data loading, and SQL queries for data analysis and management.
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ### Part 1 – Database Creation
 - Create a schema: **QuantigrationUpdates**
