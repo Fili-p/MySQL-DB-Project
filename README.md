@@ -168,7 +168,91 @@ In Massachusetts, there are 982 customers.
 <div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
     <img src="https://github.com/user-attachments/assets/fa7e0004-0f40-456d-a646-b64d9e32b6cf" style="max-width: 200px; width: 60%; height: auto;" />
   </div>
+
+<br></br>
+4. In the Customers table, perform a query to count all records where the city is Woonsocket, Rhode Island.
+* SELECT COUNT(*)
+  * FROM Customers
+  * WHERE CITY = 'Woonsocket' AND State = 'Rhode Island';
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/d97537d5-a1c1-4c34-94c5-112bff1e4deb" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+<br></br>
+Woonsocket, Rhode Island has a total of 7 customer records.
+
+<br></br>
+5. In the RMA database, update a customer’s records. Write an SQL statement to select the current fields of status and step for the record in the RMA table with an orderID value of “5175.”
+* SELECT Status, Step
+  * FROM RMA
+  * WHERE OrderID = 5175;
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/141dfce3-b124-4595-a4b5-c9786e7cd3a2" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+<br></br>
+orderID 5175 is currently in a Pending status, and step is awaiting customer documentation.
+
+<br></br>
+6. Write an SQL statement to update the status and step for the OrderID, 5175 to status = “Complete” and step = “Credit Customer Account”.
+* UPDATE RMA
+  * SET Status = 'Complete', Step = 'Credit Customer Account'
+  * WHERE OrderID = 5175;
+<br></br>
+* SELECT Status, Step
+  * FROM RMA
+  * WHERE OrderID = 5175;
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/92a7387f-e326-40cc-becf-b2a8821b1ccc" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+<br></br>
+OrderID 5175 has been updated with a new Status and Step.
+
+<br></br>
+7. Delete RMA records. Write an SQL statement to delete all records with a reason of “Rejected.”
+* DELETE FROM RMA
+  * WHERE Reason LIKE '%Rejected%';
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/300590ac-7d93-4dc7-b346-3a550ae8ad51" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+<br></br>
+In total, 596 records were deleted from the database.
+
+<br></br>
+8. Update your existing tables Rename all instances of “Customer” to “Collaborator”.
+* CREATE VIEW Collaborator AS 
+  * SELECT CustomerID AS CollaboratorID,
+  * FirstName,
+  * LastName,
+  * Street,
+  * City,
+  * State,
+  * ZipCode,
+  * Telephone
+  * FROM Customers;
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/024cf97d-d6c8-449e-a379-75dfcf60e466" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
   
+<br></br>
+* DESCRIBE Collaborator;
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/a4feaf22-b0df-44df-98a0-76f8af715692" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
+<br></br>
+9. Write an SQL statement to list the contents of the Orders table and send the output to a CSV file titled orders_updated.csv
+* SELECT *
+  * FROM Orders
+  * INTO OUTFILE '/PATH/orders_updated.csv'
+  * FIELDS TERMINATED BY ','
+  * LINES TERMINATED BY '\r\n';
+<div style="margin-bottom: 30px;"; justify-content: center; gap: 5px; flex-wrap: nowrap;">
+    <img src="https://github.com/user-attachments/assets/eb9d46e4-474e-42c7-a1aa-5bd6aa97d87d" style="max-width: 200px; width: 60%; height: auto;" />
+  </div>
+
 ---
 
 ## 🎯 Learning Outcomes
