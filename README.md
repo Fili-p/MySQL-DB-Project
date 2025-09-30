@@ -262,9 +262,6 @@ In total, 596 records were deleted from the database.
 - Data export  
 - Relational database management  
 
-## Technologies Used
-- **MySQL**
-- **CSV Data Files**
 
 
 
