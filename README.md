@@ -255,16 +255,14 @@ In total, 596 records were deleted from the database.
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 - Schema design  
 - Data import and transformation  
 - SQL querying (SELECT, INSERT, UPDATE, DELETE)  
 - Data export  
 - Relational database management  
 
----
-
-## 🛠 Technologies Used
+## Technologies Used
 - **MySQL**
 - **CSV Data Files**
 
